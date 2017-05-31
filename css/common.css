@@ -1,0 +1,64 @@
+body{
+    background-color: rgba(0,0,0,.075);
+}
+
+.clickable{
+    color: blue;
+    cursor:pointer;
+}
+.clickable:hover{
+    color: red;
+}
+span{
+    cursor:pointer;
+}
+.footer{
+    position: fixed;
+    top: calc(100% - 25px);
+    left: 5px;
+}
+#options2{
+    height: 325px;
+    overflow: scroll;
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+}
+
+#foo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+#sandbox{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+#items{
+    margin: 2px;
+}
+#input-control{
+    margin: 2px;
+}
+
+#options2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#options2::-webkit-scrollbar
+{
+	width: 2px;
+	background-color: #F5F5F5;
+}
+
+#options2::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+.btn-group-justified{
+    width: 100%;
+}

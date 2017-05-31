@@ -1,0 +1,18 @@
+{
+  "name"    : "TripoliHelper",
+  "description" : "an app to help user in many normal tasks",
+  "author" : "Lucas Tripoli Beltrao",
+  "version" : "0.1.0",
+  "main"    : "main.js",
+  "build" : {
+  "appId": "your.id",
+  "mac": {
+    "category": "your.app.category.type"
+    }
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "postinstall": "install-app-deps"	
+}
