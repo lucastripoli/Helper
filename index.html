@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <script  src="./js/jquery.js" ></script>
+         <script  src="./js/bootstrap.min.js" ></script>
+        <script  src="./js/template.js" ></script>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/common.css">
+
+	<script>if (window.module) module = window.module;</script>
+    </head>
+    <body>
+
+       <!--line with basic controls-->
+        <div id="input-control" class="">
+            <div class="input-group">
+                <div class="input-group-addon">F2</div>
+                <input type="text" class="form-control" id="typer2" placeholder="Command">
+                <div class="input-group-btn">
+                    <button id="copyTyper2" tabindex="0" class="btn btn-default" >copy command</button>
+                    <button id="clearTyper2" tabindex="0" class="btn btn-default" >F3 - clear text</button>
+                    <button id="addClip" tabindex="0" class="btn btn-default">F4 - Add to clipboard</button>     
+                </div>
+                
+            </div>
+         </div>
+
+        <!--items-->
+        <div id="items" class="">
+            <ul id="options2" class="list-group">
+            </ul>
+        </div>
+
+        
+            
+        
+        <script src="./js/main.js"></script>
+    </body>
+</html>
