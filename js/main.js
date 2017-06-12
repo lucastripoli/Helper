@@ -115,18 +115,18 @@ $(document).ready(function() {
 
                     if(typeof actualObj[keys[key]] == "object"){
                         if(typeof actualObj[keys[key]].description == "string"){
-                            retorno += template["text"](template["library"]("<span class=\"passIt\" tabindex=\"0\" >"+ keys[key]+"</span> - "+actualObj[keys[key]].description));
+                            retorno += template["text"](template["library"]("<span class=\"passIt Reachable\" tabindex=\"0\" >"+ keys[key]+"</span> - "+actualObj[keys[key]].description));
                         }else{
-                            retorno += template["text"](template["library"]("<span class=\"passIt\" tabindex=\"0\" >"+ keys[key]+"</span>"));
+                            retorno += template["text"](template["library"]("<span class=\"passIt Reachable\" tabindex=\"0\" >"+ keys[key]+"</span>"));
                         }
                         
                     }else{
                         if(typeof actualObj[keys[key]] == "function"){
-                            retorno += template["text"](template["program"]("<span class=\"passIt\" tabindex=\"0\" >"+ keys[key] +"</span>"));
+                            retorno += template["text"](template["program"]("<span class=\"passIt Reachable\" tabindex=\"0\" >"+ keys[key] +"</span>"));
                         }/*else if(isArray(actualObj)){
                             retorno += "<p><span class=\"clickable\" tabindex=\"0\" >"+ actualObj[keys[key]] +"</span></p>"
                         }*/else{
-                            retorno += template["text"]("<span tabindex=\"0\">"+ keys[key] +"</span> - <span class=\"clickable \" tabindex=\"0\" >"+ actualObj[keys[key]] +"</span>");
+                            retorno += template["text"]("<span class=\" Reachable\" tabindex=\"0\">"+ keys[key] +"</span> - <span class=\"clickable \" tabindex=\"0\" >"+ actualObj[keys[key]] +"</span>");
                         }
                         
                     }
@@ -246,7 +246,7 @@ $(document).ready(function() {
                 }
 
                 if(tecla == 40){
-                         $("ul").first().has(".passIt") ? $(".passIt").first().focus() : $("ul").first().has("span").first().focus();
+                         $("ul").first().has(".Reachable") ? $(".Reachable").first().focus() : $("ul").first().has("span").first().focus();
                 }
 
                 if(tecla == 114){

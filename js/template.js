@@ -2,7 +2,7 @@ var template = [];
 
 template["text"] = function (text) { return "<li class=\"list-group-item\">"+text+"</li>";}
 
-template["copylink"] = function (text) { return "<li class=\"list-group-item\"> <span class=\"passIt clickable\" tabindex=\"0\" >"+text+"</span> </li> ";}
+template["copylink"] = function (text) { return "<li class=\"list-group-item\"> <span class=\"clickable Reachable\" tabindex=\"0\" >"+text+"</span> </li> ";}
  
 template["alert"] = function (text) { alert(text); return "";}
 
